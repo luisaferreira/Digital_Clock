@@ -18,18 +18,18 @@ body {
 }
 
 .darkMode .switch {
-    background-color: var(--white);
-    color: var(--black);
+    border-color: var(--white);
+    color: var(--white);
 }
 
 .switch {
-    background-color: var(--black);
+    background: none;
 
-    border: none;
+    border: 2px solid var(--black);
     border-radius: 5px;
 
     font-family: Poppins, sans-serif;
-    color: var(--white);
+    color: var(--black);
 
     height: 30px;
 
@@ -87,3 +87,46 @@ body {
     font-size: 30px;
 }
 
+@media screen and (min-width:320px) and (max-width: 480px){
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .switch {
+        height: 30px;
+    
+        margin: 0 auto 20px;
+    }
+
+    .container {
+        width: 75%;
+        height: calc(100vh - 50px);
+    
+        order: -1;
+        
+        margin: 0 auto;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .time {
+        width: 100%;
+        height: 27%;
+    
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    .timeDisplay {
+        font-size: 80px;
+    }
+    
+    .timeNameDisplay {
+        font-size: 20px;
+    }
+}
