@@ -1,13 +1,49 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+
+    --blue: #05E0E9;
+    --pink: #FF2768;
+    --yellow: #FFD53D;
+}
+
 body {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--white);
+    color: var(--white);
     font-family: Poppins, sans-serif;
+}
+
+.darkMode {
+    background-color: var(--black);
+}
+
+.darkMode .switch {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.switch {
+    background-color: var(--black);
+
+    border: none;
+    border-radius: 5px;
+
+    font-family: Poppins, sans-serif;
+    color: var(--white);
+
+    height: 30px;
+
+    margin: 30px 20px 0;
+}
+
+.switch:hover {
+    cursor: pointer;
 }
 
 .container {
     width: 80%;
     max-width: 940px;
-    height: 100vh;
+    height: calc(100vh - 60px);
 
     margin: 0 auto;
 
@@ -30,15 +66,15 @@ body {
 }
 
 .hours {
-    background-color: #05E0E9;
+    background-color: var(--blue);
 }
 
 .minutes {
-    background-color: #FF2768;
+    background-color: var(--pink);
 }
 
 .seconds {
-    background-color: #FFD53D;
+    background-color: var(--yellow);
 }
 
 .timeDisplay {
@@ -50,3 +86,4 @@ body {
     font-weight: 500;
     font-size: 30px;
 }
+
