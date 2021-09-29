@@ -1,0 +1,52 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Poppins, sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 940px;
+    height: 100vh;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.time {
+    width: 32%;
+    height: calc(0.32 * 940px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.hours {
+    background-color: #05E0E9;
+}
+
+.minutes {
+    background-color: #FF2768;
+}
+
+.seconds {
+    background-color: #FFD53D;
+}
+
+.timeDisplay {
+    font-weight: 600;
+    font-size: 100px;
+}
+
+.timeNameDisplay {
+    font-weight: 500;
+    font-size: 30px;
+}
